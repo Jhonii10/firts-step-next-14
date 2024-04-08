@@ -1,6 +1,7 @@
 import { HomeIcon } from '@primer/octicons-react';
 import Link from 'next/link';
 import React from 'react';
+import { ActiveLink } from '../active-link/ActiveLink';
 
 const navItems = [
     { path:'/about', text:'About'},
@@ -24,7 +25,7 @@ const Navbar = () => {
             <div className='flex fle gap-3'>
                 {
                     navItems.map((item, index)=>(
-                        <Link href={item.path} key={index}>{item.text}</Link>
+                        <ActiveLink path={item.path} text={item.text} key={index}/>
                     ))
                 }
             </div>
