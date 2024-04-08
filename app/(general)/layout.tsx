@@ -9,7 +9,7 @@ export default function AboutLayout({
   return (
     <>
     <Navbar/>
-    <main className="flex flex-col items-center p-24">
+    <main className="flex  flex-col items-center justify-between p-16">
             <span className="text-jg">{children}</span> 
     </main>
     </> 
