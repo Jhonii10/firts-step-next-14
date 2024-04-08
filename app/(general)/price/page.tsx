@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PricePage(){
     return(
         <>
-         <span>Price Page</span>
+         <span className="text-jg" >Price Page</span>
         </>
     )
 }
